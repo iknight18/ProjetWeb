@@ -1,0 +1,45 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.informations {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  min-width: 350px;
+  width: 30%;
+  margin: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card p {
+  color: white;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.card p span {
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.sessions {
+  background-color: #ED7D31;
+}
+
+.formateurs {
+  background-color: #7030A0;
+}
+
+.participants {
+  background-color: #00B050;
+}
