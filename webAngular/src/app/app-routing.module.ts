@@ -5,10 +5,15 @@ import { SessionsComponent } from './sessions/sessions/sessions.component'
 import { FormateursComponent } from './formateurs/formateurs/formateurs.component'
 import { ParticipantsComponent } from './participants/participants/participants.component'
 
+import { SessionsRoutingModule } from './sessions/sessions-routing.module';
+
 const routes: Routes = [
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'sessions', component: SessionsComponent },
+  {
+    path: 'sessions',
+    loadChildren: () => SessionsRoutingModule
+  },
   { path: 'formateurs', component: FormateursComponent },
   { path: 'participants', component: ParticipantsComponent }
 ];
