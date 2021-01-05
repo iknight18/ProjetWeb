@@ -8,13 +8,13 @@ import { SessionsService } from '../sessions.service';
   styleUrls: ['./sessions-list.component.css']
 })
 export class SessionsListComponent implements OnInit {
-  // sessionsList: any;
-  constructor(/*private sessionsService: SessionsService*/) {
-    // this.sessionsList = [];
+  sessionsList: any;
+  constructor(private sessionsService: SessionsService) {
+    this.sessionsList = [];
   }
 
   ngOnInit(): void {
-    //this.sessionsList = this.sessionsService.get();
+    this.sessionsList = this.sessionsService.get();
   }
 
 }
