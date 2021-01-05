@@ -5,20 +5,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { SessionsListComponent } from './sessions-list/sessions-list.component';
 import { SessionItemComponent } from './session-item/session-item.component';
 import { SessionsRoutingModule } from './sessions-routing.module';
-import { RouterModule } from '@angular/router';
+import { SessionsEditComponent } from './sessions-edit/sessions-edit.component';
+import { SessionsAddComponent } from './sessions-add/sessions-add.component';
 
 @NgModule({
   declarations: [
     SessionsComponent,
     SessionsListComponent,
-    SessionItemComponent
+    SessionItemComponent,
+    SessionsEditComponent,
+    SessionsAddComponent
   ],
   imports: [
     BrowserModule,
     CommonModule,
     SessionsRoutingModule,
-    RouterModule
   ],
+  bootstrap: [SessionsComponent],
   providers: [],
 })
 export class SessionsModule { }
