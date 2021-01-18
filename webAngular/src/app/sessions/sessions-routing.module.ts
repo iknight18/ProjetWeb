@@ -10,7 +10,7 @@ const routes: Routes = [
         path: '', component: SessionsComponent, children: [
             { path: '', redirectTo: 'list' },
             { path: 'list', component: SessionsListComponent },
-            { path: 'edit', component: SessionsEditComponent },
+            { path: 'edit/:id', component: SessionsEditComponent },
             { path: 'add', component: SessionsAddComponent }
         ],
     },

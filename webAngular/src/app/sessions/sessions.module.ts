@@ -7,6 +7,7 @@ import { SessionItemComponent } from './session-item/session-item.component';
 import { SessionsRoutingModule } from './sessions-routing.module';
 import { SessionsEditComponent } from './sessions-edit/sessions-edit.component';
 import { SessionsAddComponent } from './sessions-add/sessions-add.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { SessionsAddComponent } from './sessions-add/sessions-add.component';
     BrowserModule,
     CommonModule,
     SessionsRoutingModule,
+    FormsModule
   ],
   bootstrap: [SessionsComponent],
   providers: [],
