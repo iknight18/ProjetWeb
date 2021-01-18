@@ -9,19 +9,21 @@
 
 .container p {
   margin-right: 1em;
-  color: white;
+  color: #5878aa;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: bold;
   font-size: 1em;
 }
 
-.container span:hover {
-  color: rgba(255, 255, 255, 0.5);
+
+.fas {
+  padding: 10px;
+  font-size: 25px;
+  color: #5878aa;
+  text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 10px;
 }
 
-.container span {
+.fas:hover {
   cursor: pointer;
-  margin-right: 1em;
   color: white;
-  font-size: 2em;
 }

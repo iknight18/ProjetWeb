@@ -3,67 +3,83 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1));
+  height: 100%;
+  width: 100%;
 }
 
 .logo-container .logo {
   cursor: pointer;
   width: 100px;
+  margin: 10px;
 }
 
-p {
-  margin-left: 1em;
-  color: white;
+.btn-menu p {
+  color: #5878aa;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.3em;
 }
 
 .logo-container {
   margin-top: 10px;
   align-items: center;
-  justify-content: center;
   display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 100px;
   margin-bottom: 30px;
 }
 
+.logo-container p {
+  color: #5878aa;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+
 .search-container img {
-  margin-left: .5em;
   padding: 2px;
-  width: 60px;
+  width: 40px;
 }
 
 .search-container input {
   width: 100%;
   height: 30px;
   margin: 10px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
 }
 
 .search-container {
+  padding: 0 10px;
   align-items: center;
   display: flex;
   width: 100%;
   height: 60px;
   margin-bottom: 30px;
+
 }
 
 .btn-menu:hover {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 121, 235, 0.1);
+  transition: .2s ease;
 }
 
 .btn-menu {
+  transition: 1s ease;
+
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: left;
   width: 100%;
   height: 80px;
-  border-bottom: solid 1px #aaaaaa;
+  border-bottom: solid 1px #a3ddff;
 }
 
 .btn-menu img {
-  margin-left: .5em;
-  padding: 2px;
+  margin-left: 2.3em;
+  margin-right: 1em;
   width: 60px;
 }
