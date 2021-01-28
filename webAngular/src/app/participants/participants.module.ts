@@ -8,6 +8,8 @@ import { ParticipantsComponent } from './participants/participants.component';
   declarations: [ParticipantsComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  bootstrap: [ParticipantsComponent],
+  providers: [],
 })
 export class ParticipantsModule { }
