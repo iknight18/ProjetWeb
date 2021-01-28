@@ -11,7 +11,6 @@ import { FormateursRoutingModule } from './formateurs-routing.module';
   declarations: [FormateursComponent],
   imports: [
     CommonModule,
-    BrowserModule,
     FormateursRoutingModule,
     FormsModule
   ],
