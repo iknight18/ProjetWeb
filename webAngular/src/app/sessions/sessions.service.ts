@@ -21,7 +21,9 @@ export class SessionsService {
       SESSIONITEMS.splice(index, 1);
     }
   }
-
+  getLength() {
+    return SESSIONITEMS.length;
+  }
   getSession(id: number) {
     return SESSIONITEMS[id - 1];
   }
