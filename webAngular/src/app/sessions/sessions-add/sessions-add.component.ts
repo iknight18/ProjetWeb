@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Session } from '../session'
+import { SessionsService } from '../sessions.service';
 
 @Component({
   selector: 'app-sessions-add',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SessionsAddComponent implements OnInit {
 
-  constructor() { }
+  constructor(private sessionItemService: SessionsService, private router: Router) { }
 
   ngOnInit(): void {
   }
+  addSession(sessionItem: Session) {
+    console.log(sessionItem);
+    this.sessionItemService.add(sessionItem);
+    this.router.navigate(['/sessions']);
 
+  }
 }

@@ -7,8 +7,10 @@
 }
 
 .sidebar {
-  background-color: #53ACE4;
+  background-color: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5));
+  box-shadow: #22222210 8px 10px 15px;
   width: 100px;
+  flex: none;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,13 +19,13 @@
 }
 
 .content {
-  background-color: #32435B;
+  display: flex;
+  justify-content: center;
   height: 100%;
-  width: calc(100% - 100px);
 }
 
 .icon {
-  color: #222222;
+  color: #6fa4cf;
   cursor: pointer;
   font-size: 40px;
   margin-bottom: 60px;

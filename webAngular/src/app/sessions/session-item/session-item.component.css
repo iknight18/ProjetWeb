@@ -4,9 +4,7 @@
   width: 200px;
   height: 250px;
   border: 2px solid;
-  background-color: #29394b;
   padding: 10px;
-  color: #bdc2c5;
 }
 
 h2 {
@@ -22,11 +20,11 @@ h2 {
 }
 
 :host.session-mobile {
-  border-color: #45bf94;
+  border-color: #336792;
 }
 
 :host.session-mobile>h2 {
-  color: #45bf94;
+  color: #336792;
 }
 
 .tools {
@@ -48,7 +46,7 @@ h2 {
 
 .delete {
   display: block;
-  background-color: #ec4342;
+  background-color: #8bbedb;
   padding: 4px;
   font-size: .8em;
   border-radius: 7px;
@@ -58,7 +56,7 @@ h2 {
 
 .inscrire {
   display: block;
-  background-color: #37ad79;
+  background-color: #599ce7;
   padding: 4px;
   font-size: .8em;
   border-radius: 7px;

@@ -17,21 +17,23 @@
           <option *ngFor="let track of tracks" [value]="track">{{track}}</option>
         </select>
       </li>
-      <i>
+      <li>
         <label for="date">Date</label>
         <input type="date" name="date" id="date" [(ngModel)]="session.date" required>
+      </li>
+      <li>
         <label for="duree">Days</label>
-        <input type="number" name="duree" id="duree" [(ngModel)]="session.duree" required>
-      </i>
-      <i>
+        <input type="number" name="duree" id="duree" [(ngModel)]="session.duree" required min="0" max="24">
+      </li>
+      <li>
         <label for="adress">Adress</label>
         <input type="text" name=" adress " id=" adress " [(ngModel)]="session.adress" required>
 
-      </i>
-      <i>
+      </li>
+      <li>
         <label for="participants">Participants</label>
-        <input type="number" name="participants" id="participants" [(ngModel)]="session.participants" required>
-      </i>
+        <input type="number" name="participants" id="participants" [(ngModel)]="session.participants" required min="0">
+      </li>
     </ul>
     <button type="submit" [disabled]="!sessionItemForm.form.valid">Modifier</button>
   </form>
