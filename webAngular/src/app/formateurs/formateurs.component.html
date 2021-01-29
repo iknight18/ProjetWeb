@@ -1,2 +1,56 @@
-<p>formateurs works!</p>
-<p *ngFor="let i of [1,2,3]">hello</p>
+<div class="container">
+  <div class="topButtons">
+    <i class="fas fa-user-plus" (click)="ajouter()"></i>
+    <i class="fas fa-sync-alt"></i>
+  </div>
+
+  <form #FormateurItemForm="ngForm" class="f-table" (ngSubmit)="submit(FormateurItemForm.value)">
+    <table>
+      <thead>
+        <tr>
+          <th class="header" colspan="7">Liste des Formateurs</th>
+        </tr>
+        <tr>
+          <th>Name</th>
+          <th>First Name</th>
+          <th>Adress</th>
+          <th>Email</th>
+          <th>Expertise</th>
+          <th colspan="2">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngIf="newFormateur">
+          <td><input type="text" name="name" ngModel required /></td>
+          <td><input type="text" name="firstname" ngModel required /></td>
+          <td><input type="text" name="adress" ngModel required /></td>
+          <td><input type="email" name="email" ngModel required /></td>
+          <td><input type="text" name="expertise" ngModel required /></td>
+          <td class="btn2" colspan="2">
+            <button type="submit" [disabled]="!FormateurItemForm.form.valid">
+              <i class="fas fa-check"></i>
+            </button>
+          </td>
+        </tr>
+
+        <tr *ngFor="let formateur of formateursList; let i=index; let isOdd = odd;"
+          [ngClass]="{'odd':isOdd ,'even':!isOdd}">
+          <td><input type="text" [(ngModel)]="formateur.name" *ngIf="i == aModifier" /><span
+              *ngIf="i != aModifier">{{formateur.name}}</span></td>
+          <td><input type="text" [(ngModel)]="formateur.firstname" *ngIf="i == aModifier" /><span
+              *ngIf="i != aModifier">{{formateur.firstname}}</span></td>
+          <td><input type="text" [(ngModel)]="formateur.adress" *ngIf="i == aModifier" /><span
+              *ngIf="i != aModifier">{{formateur.adress}}</span></td>
+          <td><input type="email" [(ngModel)]="formateur.email" *ngIf="i == aModifier" /><span
+              *ngIf="i != aModifier">{{formateur.email}}</span></td>
+          <td><input type="text" [(ngModel)]="formateur.expertise" *ngIf="i == aModifier" /><span
+              *ngIf="i != aModifier">{{formateur.expertise}}</span></td>
+          <td class="btn"><i class="fas fa-edit" (click)="modifier(i)" *ngIf="i != aModifier"></i><i
+              class="fas fa-check" *ngIf="i == aModifier" (click)="modifier(-1)"></i></td>
+          <td class="btn"><i class="fas fa-trash-alt" (click)="supprimer(i)"></i></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </form>
+</div>

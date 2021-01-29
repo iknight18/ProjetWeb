@@ -5,17 +5,21 @@ import { AppComponent } from './app.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FormateursComponent } from './formateurs/formateurs.component';
+import { ParticipantsComponent } from './participants/participants.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopbarComponent,
     SidebarComponent,
-    FormateursComponent
+    FormateursComponent,
+    ParticipantsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

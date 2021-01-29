@@ -51,13 +51,14 @@ main {
 }
 
 .topbar {
+  height: 50px;
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 
 .content {
-  height: 100%;
+  height: calc(100% - 50px);
   width: 100%;
 }
 
