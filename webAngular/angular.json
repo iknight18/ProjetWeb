@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "webAngular"
+  "defaultProject": "webAngular",
+  "cli": {
+    "analytics": "8605cbfd-9eca-4ca8-91b8-81ea19cd7ddb"
+  }
 }

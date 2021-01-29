@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { DashboardComponent } from './dashboard/dashboard/dashboard.component'
+import { DashboardComponent } from './dashboard/dashboard.component'
 import { FormateursComponent } from './formateurs/formateurs.component';
-
-
+import { ParticipantsComponent } from './participants/participants.component';
 import { SessionsRoutingModule } from './sessions/sessions-routing.module';
 import { SessionsModule } from './sessions/sessions.module';
 
@@ -18,7 +17,8 @@ const routes: Routes = [
     path: 'formateurs',
     component: FormateursComponent
   },
-  //{ path: 'participants', component: ParticipantsComponent }
+  { path: 'participants/:id', component: ParticipantsComponent },
+  { path: 'participants', component: ParticipantsComponent }
 ];
 
 @NgModule({

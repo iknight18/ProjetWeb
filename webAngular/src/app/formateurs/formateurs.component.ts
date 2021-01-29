@@ -8,10 +8,12 @@ import { FormateursService } from './formateurs.service';
   styleUrls: ['./formateurs.component.css']
 })
 export class FormateursComponent implements OnInit {
+
   formateursList: any;
   aModifier: number = -1;
   newFormateur: Boolean = false;
-  constructor(private formateurService: FormateursService) { }
+  constructor(private formateurService: FormateursService) {  
+  }
 
   ngOnInit(): void {
     this.formateursList = this.formateurService.get();

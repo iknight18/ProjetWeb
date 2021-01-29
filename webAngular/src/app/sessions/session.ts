@@ -7,6 +7,6 @@ export class Session {
         public date: Date,
         public duree: number,
         public adress: string,
-        public participants: number,
+        public participants: number[],
         public isCompleted: boolean) { }
 }

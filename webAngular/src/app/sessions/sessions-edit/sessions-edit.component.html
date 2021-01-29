@@ -30,10 +30,6 @@
         <input type="text" name=" adress " id=" adress " [(ngModel)]="session.adress" required>
 
       </li>
-      <li>
-        <label for="participants">Participants</label>
-        <input type="number" name="participants" id="participants" [(ngModel)]="session.participants" required min="0">
-      </li>
     </ul>
     <button type="submit" [disabled]="!sessionItemForm.form.valid">Modifier</button>
   </form>

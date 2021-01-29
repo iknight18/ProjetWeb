@@ -8,10 +8,6 @@ import { DatePipe } from '@angular/common';
 export class TopbarComponent implements OnInit {
   currentDate = new Date();
   adresse = 'Tunis, Tunisie';
-  constructor() {
-  }
-
-  ngOnInit(): void {
-  }
-
+  constructor() {}
+  ngOnInit(): void {}
 }

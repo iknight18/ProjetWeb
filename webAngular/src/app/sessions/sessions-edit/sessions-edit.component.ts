@@ -14,7 +14,7 @@ export class SessionsEditComponent implements OnInit {
   private sub: any;
   session: any;
   tracks = ['MEAN', 'Angular',
-    'NodeJS', 'Android', 'Swift', 'Xamarin'];
+    'NodeJS', 'Android', 'Swift', 'Xamarin','Ionic'];
   constructor(private route: ActivatedRoute, private sessionItemService: SessionsService, private router: Router) { }
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {

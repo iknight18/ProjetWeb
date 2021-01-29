@@ -6,7 +6,6 @@ import { FORMATEURSLIST } from './formateurs'
 })
 export class FormateursService {
   constructor() {
-    FORMATEURSLIST.push(localStorage.getItem('FORMATEURSLIST'))
   }
   get() {
     return FORMATEURSLIST;
@@ -14,11 +13,9 @@ export class FormateursService {
   add(item: Formateur) {
     item.id = FORMATEURSLIST.length + 1;
     FORMATEURSLIST.push(item);
-    localStorage.setItem('FORMATEURSLIST', FORMATEURSLIST.toString())
   }
   delete(index: number) {
     if (index >= 0) FORMATEURSLIST.splice(index, 1);
-    localStorage.setItem('FORMATEURSLIST', FORMATEURSLIST.toString())
   }
   getLength() {
     return FORMATEURSLIST.length;

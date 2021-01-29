@@ -7,6 +7,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { FormateursComponent } from './formateurs/formateurs.component';
 import { ParticipantsComponent } from './participants/participants.component';
 import { FormsModule } from '@angular/forms';
+import { DashboardComponent } from './dashboard/dashboard.component';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     TopbarComponent,
     SidebarComponent,
     FormateursComponent,
-    ParticipantsComponent
+    ParticipantsComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

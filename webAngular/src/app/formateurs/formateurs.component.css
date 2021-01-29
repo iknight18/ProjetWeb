@@ -24,9 +24,14 @@
 .f-table {
   height: calc(90% - 3em);
   display: flex;
+  flex-direction: column;
   width: 100%;
-  justify-content: center;
+  align-items: center;
   overflow-y: auto;
+}
+
+form{
+  margin-bottom: 30px;
 }
 
 .f-table::-webkit-scrollbar {
@@ -50,7 +55,7 @@
   background-color: #32609c;
 }
 
-table {
+.bigTable {
   width: 93%;
   border: 1px solid #EEEEEE;
   border-collapse: collapse;
@@ -113,7 +118,9 @@ td input {
 i:hover {
   text-shadow: 2px 2px 5px rgba(99, 198, 255, 0.425);
 }
-
+td.no-padding{
+  padding:0;
+}
 td:hover {
 
   background-color: rgba(255, 255, 255, 0.2);

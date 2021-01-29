@@ -15,6 +15,7 @@ export class SessionsAddComponent implements OnInit {
   ngOnInit(): void {
   }
   addSession(sessionItem: Session) {
+    sessionItem.participants = [];
     console.log(sessionItem);
     this.sessionItemService.add(sessionItem);
     this.router.navigate(['/sessions']);

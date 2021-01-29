@@ -3,38 +3,52 @@ import { Participant } from "./participant";
 export const PARTICIPANTSLIST: Participant[] = [
     {
         id: 1,
-        name: 'Nefzi',
-        firstname: 'Feres',
+        cin : '07485479',
+        name: 'Gharbi',
+        firstname: 'Mohamed',
         adress: 'Tunis',
-        email: 'feresnefzi18@gmail.com',
-        societe: 'Angular',
+        email: 'medtest@gmail.com',
+        societe: 'PwC',
         poste: "developer"
     },
     {
         id: 2,
-        name: 'Khiari',
-        firstname: 'Nader',
+        cin : '07485468',
+        name: 'Bakkouri',
+        firstname: 'Ala',
         adress: 'Ariana',
-        email: 'Nadertest@gmail.com',
-        societe: 'Angular',
+        email: 'Alatest@gmail.com',
+        societe: 'AlaDev',
         poste: "developer"
     },
     {
         id: 3,
+        cin : '01185479',
         name: ' Srasra',
-        firstname: 'Fatma',
+        firstname: 'Bilel',
         adress: 'Paris',
-        email: 'FatmaTest@gmail.com',
-        societe: 'Angular',
-        poste: "developer"
+        email: 'Bileltest@gmail.com',
+        societe: 'Telecom',
+        poste: "PDG"
     },
     {
         id: 4,
-        name: ' Ben ali',
-        firstname: 'Mohamed',
+        cin : '07454797',
+        name: 'Bouali',
+        firstname: 'Samir',
         adress: 'USA',
-        email: 'medtest@gmail.com',
-        societe: 'Angular',
-        poste: "developer"
+        email: 'samirtest@gmail.com',
+        societe: 'STEG',
+        poste: "Maintenance"
+    },
+    {
+        id: 5,
+        cin : '04454795',
+        name: 'Bouali',
+        firstname: 'Mounir',
+        adress: 'USA',
+        email: 'samirtest@gmail.com',
+        societe: 'STEG',
+        poste: "Developpeur"
     }
 ]
