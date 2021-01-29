@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component'
-import { FormateursRoutingModule } from './formateurs/formateurs-routing.module';
-import { FormateursComponent } from './formateurs/formateurs/formateurs.component'
-import { ParticipantsComponent } from './participants/participants/participants.component'
+import { FormateursComponent } from './formateurs/formateurs.component';
+
+
 import { SessionsRoutingModule } from './sessions/sessions-routing.module';
 import { SessionsModule } from './sessions/sessions.module';
 
@@ -14,8 +14,11 @@ const routes: Routes = [
     path: 'sessions',
     loadChildren: () => SessionsRoutingModule
   },
-  { path: 'formateurs', loadChildren: () => FormateursRoutingModule },
-  { path: 'participants', component: ParticipantsComponent }
+  {
+    path: 'formateurs',
+    component: FormateursComponent
+  },
+  //{ path: 'participants', component: ParticipantsComponent }
 ];
 
 @NgModule({

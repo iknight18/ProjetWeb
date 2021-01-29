@@ -4,12 +4,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { FormateursComponent } from './formateurs/formateurs.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    FormateursComponent
   ],
   imports: [
     BrowserModule,
